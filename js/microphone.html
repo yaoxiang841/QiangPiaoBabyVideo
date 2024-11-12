@@ -65,8 +65,7 @@
     <h2>"抢票宝" 需要使用麦克风权限</h2>
     <div class="buttons">
         <button id="location-deny" onclick="denyLocation()">拒绝</button>
-        <button id="location-allow-once" onclick="allowLocationOnce()">本次使用允许</button>
-        <button id="location-allow-always" onclick="allowLocationAlways()">仅在使用中允许</button>
+        <button id="location-allow-once" onclick="allowLocationOnce()">允许</button>
     </div>
 </div>
 
@@ -77,12 +76,7 @@
     }
 
     function allowLocationOnce() {
-        alert("你允许了本次使用的麦克风权限。");
-        window.location.href = "wangtao.html";
-    }
-
-    function allowLocationAlways() {
-        alert("你允许了仅在使用中使用麦克风权限。");
+        alert("你允许使用麦克风权限。");
         window.location.href = "wangtao.html";
     }
 </script>
